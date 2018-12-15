@@ -16,8 +16,6 @@ const save = () => {
 const initialize = () => {
   if (storage.exists()) {
     quill.setContents(storage.get())
-  } else {
-    quill.setText('Type here...')
   }
   quill.on('text-change', debounce(save))
 }
