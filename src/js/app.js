@@ -5,6 +5,7 @@ const debounce = require('./debounce')
 const storage = require('./storage')
 
 const quill = new Quill('#editor', {
+  placeholder: 'Compose an epic..',
   theme: 'snow'
 })
 
