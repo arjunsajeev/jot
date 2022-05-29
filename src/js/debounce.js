@@ -1,8 +1,7 @@
 const debounce = (fn, ...args) => {
   let timeout
   let later = () => {
-    timeout = null,
-      fn.apply(this, args)
+    ;(timeout = null), fn.apply(this, args)
   }
   return () => {
     clearTimeout(timeout)

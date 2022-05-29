@@ -1,8 +1,7 @@
 const storageKey = 'writer-app'
 const storage = {
   get() {
-    if (this.exists())
-      return JSON.parse(localStorage.getItem(storageKey))
+    if (this.exists()) return JSON.parse(localStorage.getItem(storageKey))
   },
   set(data) {
     if (window.localStorage)
@@ -10,7 +9,7 @@ const storage = {
   },
   exists() {
     return window.localStorage && localStorage.getItem(storageKey)
-  }
+  },
 }
 
 module.exports = storage
