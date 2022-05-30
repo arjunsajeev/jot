@@ -1,8 +1,8 @@
-require('../css/quill.snow.css')
-require('../css/style.css')
-const Quill = require('quill')
-const debounce = require('./debounce')
-const storage = require('./storage')
+import '../css/quill.snow.css'
+import '../css/style.css'
+import Quill from 'quill'
+import debounce from './debounce'
+import storage from './storage'
 
 const quill = new Quill('#editor', {
   placeholder: 'Compose an epic..',
