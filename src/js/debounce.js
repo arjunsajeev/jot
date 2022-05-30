@@ -9,4 +9,4 @@ const debounce = (fn, ...args) => {
   }
 }
 
-module.exports = debounce
+export default debounce
